@@ -191,8 +191,6 @@ form button[type="submit"] {
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
     text-decoration: none;
-    transition: all 0.3s;
-    cursor: pointer;
     margin-top: 1rem;
 }
 
