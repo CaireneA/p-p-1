@@ -27,6 +27,7 @@
                 </ul>
             </nav>
         </div>
+        <!-- hero image -->
         <section id="hero-image-container">
             <div id="hero-image"></div>
             <div id="main-text-container">
@@ -35,6 +36,43 @@
             </div>
         </section>
     </header>
+    <!-- submit recipe form -->
+    <main>
+        <section id="submit-recipe">
+            <h2>Submit Your Recipe</h2>
+            <form action="" method="post"> <!-- ?? -->
+                <fieldset>
+                    <legend>Recipe Details</legend>
+                    <div>
+                        <label for="recipe-name">Recipe Name:</label>
+                        <input type="text" id="recipe-name" name="recipe-name" required>
+                    </div>
+                    <div>
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <label for="ingredients">Ingredients:</label>
+                        <textarea id="ingredients" name="ingredients" rows="6" required></textarea>
+                    </div>
+                    <div>
+                        <label for="cooking-steps">Cooking Steps:</label>
+                        <textarea id="cooking-steps" name="cooking-steps" rows="6" required></textarea>
+                    </div>
+                    <div>
+                        <label for="cooking-time">Cooking Time (in minutes):</label>
+                        <input type="number" id="cooking-time" name="cooking-time" min="1" required>
+                    </div>
+                    <div>
+                        <label for="additional-tips">Additional Tips (optional):</label>
+                        <textarea id="additional-tips" name="additional-tips" rows="4"></textarea>
+                    </div>
+                    <button type="submit" aria-label="Submit Recipe">Submit Recipe</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
 </body>
 
 </html>
