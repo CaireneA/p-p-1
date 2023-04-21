@@ -1,0 +1,137 @@
+/* Top level styling */
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Lato:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header styling */
+#main-header {
+    background-color: transparent;
+    color: #6F743C;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+#main-header .container {
+    margin-bottom: 10px;
+}
+
+/* Logo */
+#main-header #logo {
+    font-family: 'Calligraffitti', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #D39944;
+    float: left;
+}
+
+/* Navigation menu */
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6F743C;
+    font-size: 1.1rem;
+    padding: 0.2rem 0.5rem;
+}
+
+nav ul li a:hover {
+    color: #D39944;
+    border-bottom: 2px solid #D39944;
+}
+
+nav ul li a:focus {
+    color: #D39944;
+    border-bottom: 2px solid #D39944;
+}
+
+/* Hero image styling */
+#hero-image-container {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.jpg') no-repeat center;
+    background-size: cover;
+    animation-name: hero-image-zoom;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+#main-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Main website header */
+#main-header h1 {
+    color: #D39944;
+}
+
+/* Call to Action button */
+#main-cta {
+    font-family: 'Calligraffitti';
+    display: inline-block;
+    background-color: transparent;
+    color: #D39944;
+    border: 2px solid #FFFFFF;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#main-cta:hover {
+    background-color: #FFFFFF;
+    color: #000;
+}
+
+/* hero image animation */
+
+@keyframes hero-image-zoom {
+    from {
+        transform: scale(1.6);
+    }
+    to{
+        transform: scale(1.8);
+    }
+}
