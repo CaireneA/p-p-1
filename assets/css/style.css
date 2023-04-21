@@ -103,17 +103,17 @@ nav ul li a:focus {
 }
 
 /* Main website header */
-#main-header h1 {
+#main-header {
     color: #D39944;
 }
 
 /* Call to Action button */
-#main-cta {
+#main-cta button {
     font-family: 'Calligraffitti';
     display: inline-block;
     background-color: transparent;
     color: #D39944;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #D39944;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
     text-decoration: none;
@@ -129,9 +129,9 @@ nav ul li a:focus {
 
 @keyframes hero-image-zoom {
     from {
-        transform: scale(1.6);
+        transform: scale(1.8);
     }
     to{
-        transform: scale(1.8);
+        transform: scale(2);
     }
 }
