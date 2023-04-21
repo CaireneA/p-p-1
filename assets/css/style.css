@@ -214,7 +214,86 @@ form legend {
 
 /* Recipe of the day styling */ 
 
+#recipe-of-the-day {
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #recipe-of-the-day h2 {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem 0;
+  }
 
+  #recipe-of-the-day h3 {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem 0;
+  }
+
+  #recipe-of-the-day h4 {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem 0;
+  }
+  
+  #recipe-of-the-day p {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem 0;
+  }
+
+  #recipe-of-the-day ul{
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem 0;
+  }
+
+  #recipe-of-the-day ol {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem 0;
+  }
+  
+  #recipe-of-the-day ul {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem 0;
+  }
+  
+  #recipe-of-the-day ol {
+    margin-left: 2rem;
+  }
+  
+  #recipe-video {
+    width: 60%;
+    max-width: 600px;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin: 1rem 0;
+  }
+  
+  #recipe-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #recipe-photo {
+    width: 30%;
+    max-width: 400px;
+    margin: 1rem 0;
+    display: block;
+    text-align: center;
+  }  
 
 /* Hero image animation */
 
