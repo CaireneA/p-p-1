@@ -43,7 +43,7 @@
     <!-- submit recipe form -->
     <main>
         <section id="submit-recipe">
-            <div class="anchor"></div>
+            <div class="background-photo">
             <h2>Submit Your Recipe</h2>
             <form action="" method="post">
                 <!-- ?? -->
@@ -56,12 +56,8 @@
                                 <input type="text" id="recipe-name" name="recipe-name" class="input" required>
                             </div>
                             <div>
-                                <label for="description">Description:</label>
-                                <textarea id="description" name="description" rows="4" class="input"></textarea>
-                            </div>
-                            <div>
                                 <label for="ingredients">Ingredients:</label>
-                                <textarea id="ingredients" name="ingredients" rows="6" class="input" required></textarea>
+                                <textarea id="ingredients" name="ingredients" rows="5" class="input" required></textarea>
                             </div>
                             <div>
                                 <label for="cooking-steps">Cooking Steps:</label>
@@ -84,13 +80,22 @@
                     </div>
                 </div>
             </form>
+        </div>
         </section>
     </main>
     <!-- Recipe of the day page -->
     <section id="recipe-of-the-day">
         <div class="container">
-            <h2>Recipe of the Day: Easy Butter Chicken</h2>
-            <h3>By Jennifer Joyce</h3>
+            <h2>Recipe of the Day</h2>
+            <div class="recipe-header">
+                <div class="recipe-text">
+                    <h3>Easy Butter Chicken</h3>
+                    <h4>By Jennifer Joyce</h4>
+                </div>
+                <div id="recipe-photo">
+                    <img src="assets/images/recipe-photo.jpg" alt="Easy Butter Chicken">
+                </div>
+            </div>
             <br>
             <p><strong>Prep time:</strong> 15 mins</p>
             <p><strong>Cook time:</strong> 35 mins, plus at least 1 hr marinating</p>
@@ -153,8 +158,6 @@
             <div id="recipe-video">
                 <iframe src="" frameborder="0" allowfullscreen></iframe>
             </div>
-            <!-- Recipe Photo -->
-            <img id="recipe-photo" src="assets/images/recipe-photo.jpg" alt="Butter Chicken">
 
         </div>
     </section>
