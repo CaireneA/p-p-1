@@ -27,6 +27,7 @@ body {
 }
 
 /* Header styling */
+
 #main-header {
     background-color: transparent;
     color: #6F743C;
@@ -156,6 +157,21 @@ nav ul li a:focus {
 
 /* Form styling */
 
+.columns-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  
+  .column {
+    flex: 1;
+    min-width: calc(50% - 1rem);
+  }
+
 #submit-recipe {
     width: 100%;
     max-width: 800px;
@@ -168,6 +184,14 @@ nav ul li a:focus {
     margin-bottom: 1rem;
     color: #D39944;
     text-align: center;
+    padding-top: 80px;
+}
+
+#submit-recipe .anchor {
+    display: block;
+    position: absolute;
+    bottom: -250px;
+    visibility: hidden;
 }
 
 form {
@@ -183,7 +207,7 @@ form label {
 }
 
 .input{
-    width: 98%;
+    width: 96%;
     padding: 0.5rem;
     border: 1px solid #6F743C;
     border-radius: 5px;
@@ -308,10 +332,11 @@ form legend {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+    align-content: flex-start;
     flex-direction: column;
+    flex-wrap: wrap;;
 }
   
 
