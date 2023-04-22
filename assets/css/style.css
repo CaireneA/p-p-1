@@ -22,7 +22,8 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+    align-content: center;
 }
 
 /* Header styling */
@@ -32,10 +33,18 @@ body {
     padding: 1rem;
     text-align: center;
     position: relative;
+    z-index: 10;
 }
 
 #main-header .container {
     margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 10px;
 }
 
 /* Logo */
@@ -57,6 +66,7 @@ nav ul {
     list-style: none;
     display: flex;
     align-items: center;
+    margin-right: 1rem;
 }
 
 nav ul li {
@@ -70,7 +80,7 @@ nav ul li a {
     padding: 0.2rem 0.5rem;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
     color: #D39944;
     border-bottom: 2px solid #D39944;
 }
@@ -82,7 +92,7 @@ nav ul li a:focus {
 
 /* Hero image styling */
 #hero-image-container {
-    height: 600px;
+    height: 800px;
     width: 100%;
     overflow: hidden;
 }
@@ -104,16 +114,31 @@ nav ul li a:focus {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #FFFFFF;
+    z-index: 11;
 }
 
+.grey-box {
+    background-color: rgba(68, 68, 68, 0.7);
+    border-radius: 15px;
+    padding: 15px;
+    display: inline-block;
+    max-width: 80%;
+    position: relative;
+    font-family: 'Calligraffitti', Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    text-shadow: #000;
+}
+
+
 /* Main website header */
-#main-header {
+#header {
     color: #D39944;
+    text-shadow: #000;
 }
 
 /* Call to Action button */
 #main-cta button {
-    font-family: 'Calligraffitti';
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
     display: inline-block;
     background-color: transparent;
     color: #D39944;
@@ -124,7 +149,7 @@ nav ul li a:focus {
     transition: all 0.3s;
 }
 
-#main-cta:hover {
+#main-cta button:hover {
     background-color: #FFFFFF;
     color: #000;
 }
@@ -143,7 +168,6 @@ nav ul li a:focus {
     margin-bottom: 1rem;
     color: #D39944;
     text-align: center;
-    font-weight: 10%;
 }
 
 form {
@@ -158,28 +182,13 @@ form label {
     color: #6F743C;
 }
 
-form input[type="text"] {
-    width: 100%;
+.input{
+    width: 98%;
     padding: 0.5rem;
     border: 1px solid #6F743C;
     border-radius: 5px;
     font-size: 1rem;
-}
-
-form input[type="number"] {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #6F743C;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-form textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #6F743C;
-    border-radius: 5px;
-    font-size: 1rem;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
 form button[type="submit"] {
@@ -295,6 +304,17 @@ form legend {
     text-align: center;
   }  
 
+  #recipe-of-the-day .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+    flex-direction: column;
+}
+  
+
 /* Hero image animation */
 
 @keyframes hero-image-zoom {
@@ -302,6 +322,6 @@ form legend {
         transform: scale(1.8);
     }
     to{
-        transform: scale(2);
+        transform: scale(2.1);
     }
 }
