@@ -57,6 +57,8 @@ body {
     text-decoration: none;
     color: #D39944;
     float: left;
+    position: relative;
+    left: 0.5rem;
 }
 
 /* Navigation menu */
@@ -183,6 +185,7 @@ nav ul li a:focus {
     background: url('../images/submit-recipe-background.png') no-repeat center;
     background-size: cover; 
     position: relative;  
+    width: 100%;
 }
 
 .background-photo::before {
@@ -237,7 +240,7 @@ form label {
 }
 
 form button[type="submit"] {
-    font-family: 'Calligraffitti';
+    font-family: 'Calligraffitti', Arial, Helvetica, sans-serif;
     display: inline-block;
     background-color: transparent;
     color: #D39944;
@@ -267,29 +270,36 @@ form legend {
     margin-bottom: 0.5rem;
 }
 
-/* Recipe of the day styling */ 
-  
-  #recipe-of-the-day {
-    padding: 3rem 2rem;
+/* Recipe of the day styling */
+
+#recipe-of-the-day {
+    padding: 2rem 1rem;
     background-color: #ffffff;
-    max-width: 1100px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 #recipe-of-the-day h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    color: #D39944;
+    font-family: 'Calligraffitti', Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
 }
 
 #recipe-of-the-day h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    color: #D39944;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 #recipe-of-the-day h4 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    color: #444444;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 #recipe-of-the-day .container {
@@ -300,22 +310,26 @@ form legend {
 
 #recipe-of-the-day .recipe-header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    max-width: 900px;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    align-items: flex-start;
 }
 
 #recipe-of-the-day .recipe-text {
-    text-align: center;
-    margin-bottom: 1rem;
+    flex: 1;
+    text-align: left;
+    margin-right: 1rem;
+    width: 33%;
+    margin-top: -0.5rem;
 }
 
 #recipe-of-the-day #recipe-photo {
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    margin-bottom: 2rem;
+    flex: 2;
+    text-align: right;
+    margin-left: 1rem;
+    width: 66%;
 }
 
 #recipe-of-the-day #recipe-photo img {
@@ -325,23 +339,55 @@ form legend {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#recipe-of-the-day p, #recipe-of-the-day ul, #recipe-of-the-day ol {
+#recipe-of-the-day .recipe-info {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    max-width: 800px;
-    margin: 1rem 0;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#recipe-of-the-day .recipe-info > div {
+    margin: 1rem;
+}
+
+#recipe-of-the-day .recipe-info > div:nth-child(odd) {
+    flex: 1;
+    width: 33%;
+}
+
+#recipe-of-the-day .recipe-info > div:nth-child(even) {
+    flex: 2;
+    width: 66%;
+}
+
+#recipe-of-the-day .prep-time {
+    margin-top: -0.5rem;
+}
+
+#recipe-of-the-day p,
+#recipe-of-the-day ul,
+#recipe-of-the-day ol {
+    margin: 0.5rem 0;
     text-align: left;
+    color: #444444;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 }
 
 #recipe-of-the-day ol {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 #recipe-video {
-    width: 60%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 900px;
     height: 0;
     padding-bottom: 56.25%;
     margin: 1rem 0;
+    position: relative;
 }
 
 #recipe-video iframe {
@@ -351,6 +397,9 @@ form legend {
     width: 100%;
     height: 100%;
 }
+
+
+
 
 /* Hero image animation */
 
