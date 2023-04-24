@@ -10,6 +10,8 @@
         content="recipe sharing, recipe of the day, submit recipe, cooking, food, meal, dish, kitchen, taste">
     <meta name="author" content="Ahmed">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to display icons -->
+    <script src="https://kit.fontawesome.com/c84c096ef8.js" crossorigin="anonymous"></script>
     <title>Meal Reveal</title>
 </head>
 
@@ -38,8 +40,8 @@
                     <h2>Recipe of the Day</h2>
                     <div class="recipe-header">
                         <div class="recipe-text">
-                            <h3>Easy Butter Chicken</h3>
-                            <h5>By Jennifer Joyce</h5>
+                            <h3 class="recipe-sub-title">Easy Butter Chicken</h3>
+                            <h3 id="recipe-author">By Jennifer Joyce</h3>
                             <br>
                             
                                 <div class="prep-time">
@@ -67,7 +69,7 @@
                     <div class="recipe-info">
                         <div class="ingredients">
                             <div class="ingredients-container">
-                                <h4>Nutrition: per serving</h4>
+                                <h4 class="recipe-sub-title">Nutrition: per serving</h4>
                                 <ul>
                                     <li>Calories: 367</li>
                                     <li>Fat: 18g</li>
@@ -80,7 +82,7 @@
                                 </ul>
                             </div>
                             <div class="ingredients-container">
-                                <h4>Ingredients</h4>
+                                <h4 class="recipe-sub-title">Ingredients</h4>
                                 <ul>
                                     <li>500g skinless boneless chicken thighs</li>
                                     <li>2 tbsp vegetable oil</li>
@@ -96,7 +98,7 @@
                                 </ul>
                             </div>
                             <div class="ingredients-container">
-                                <h4>For the marinade</h4>
+                                <h4 class="recipe-sub-title">For the marinade</h4>
                                 <ul>
                                     <li>1/2-1 lemon, (to taste) juiced</li>
                                     <li>2 tsp ground cumin</li>
@@ -111,12 +113,12 @@
                     <div id="recipe-info-two">
                         <!-- Recipe video -->
                             <div class="video-container" id="recipe-video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/yjqpJZDAD7U" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/yjqpJZDAD7U" title="recipe-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         <!-- Recipe method -->
                         <section>
                             <div id="method-container">
-                                <h4>Method</h4>
+                                <h4 class="recipe-sub-title">Method</h4>
                                 <ol>
                                     <li><strong>STEP 1:</strong> In a medium bowl, mix all the marinade ingredients with
                                         some
@@ -156,6 +158,22 @@
                 </article>
         </div>
     </section>
+      <!-- Footer -->
+    <footer>
+        <div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="follow-us">Follow us on social media!</p>
+                    <div class="social-media-icons">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.snapchat.com/" target="_blank"><i class="fab fa-snapchat fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+      </footer>
 </body>
 
 </html>
