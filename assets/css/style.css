@@ -57,7 +57,7 @@ form {
     margin-bottom: 4rem;
 }
 
-form>* {
+form > * {
     flex: 1;
 }
 
@@ -770,3 +770,138 @@ footer {
         flex-direction: row;
     }
 }
+
+/* Responsive navigation */
+@media screen and (max-width: 768px) {
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+  
+
+  /* Extra small devices */
+@media (max-width: 575.98px) {
+  
+    #recipe-photo img {
+      width: 100%;
+      height: auto;
+    }
+
+    .button {
+        font-size: 0.7rem;
+    }
+  
+    #recipe-video iframe {
+      width: 100%;
+      height: auto;
+    }
+  
+    .ingredients-container {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Small devices */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+  
+    #main-header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul {
+      flex-direction: column;
+    }
+
+    .button {
+        font-size: 0.7rem;
+    }
+
+    .video-container {
+        float: left;
+        margin-left: 2rem;
+        display: block;
+    }
+  
+    #recipe-photo img {
+      width: 100%;
+      height: auto;
+    }
+  
+    #recipe-video iframe {
+      width: 100%;
+      height: auto;
+    }
+  
+    .ingredients-container {
+      margin-bottom: 20px;
+    }
+
+    .recipe-header {
+        flex-direction: column;
+      }
+    
+      #recipe-photo img {
+        width: 100%;
+        height: auto;
+      }
+    
+      #recipe-video iframe {
+        width: 100%;
+        height: auto;
+      }
+    
+      .ingredients {
+        flex-direction: column;
+      }
+    
+      .ingredients-container {
+        margin-bottom: 20px;
+      }
+  }
+  
+  /* Medium devices */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+  
+    #recipe-photo img {
+      width: 100%;
+      height: auto;
+    }
+  
+    #recipe-video iframe {
+      width: 100%;
+      height: auto;
+    }
+  
+    .ingredients-container {
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+        margin-left: 2rem;
+        display: block;
+    }
+  }
+
+  /* Large devices */ 
+  @media (min-width: 992px) {
+    #main-header {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+  }
+  
+  
