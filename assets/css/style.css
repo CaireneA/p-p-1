@@ -40,6 +40,10 @@ body {
     transition: all 0.3s;
 }
 
+.hidden {
+    display: none;
+}
+
 .button:hover {
     background-color: #D39944;
     color: #fff;
@@ -148,18 +152,16 @@ nav ul li a:focus {
     position: relative;
     font-family: 'Calligraffitti', Arial, Helvetica, sans-serif;
     letter-spacing: 3px;
-    text-shadow: #000;
 }
 
 
 /* Main website header */
 #header {
     color: #D39944;
-    text-shadow: #000;
 }
 
 /* Call to Action button */
-#main-cta button {
+#main-cta {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
     display: inline-block;
     background-color: transparent;
@@ -169,9 +171,10 @@ nav ul li a:focus {
     font-size: 1.1rem;
     text-decoration: none;
     transition: all 0.3s;
+    letter-spacing: 0.1rem;
 }
 
-#main-cta button:hover {
+#main-cta:hover {
     background-color: #D39944;
     color: #fff;
 }
@@ -290,6 +293,24 @@ form legend {
     margin-bottom: 0.5rem;
 }
 
+/* Thank you message styling */
+
+#thank-you-message h2 {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 10%;
+    font-family: inherit;
+    color: #D39944;
+}
+
+#thank-you-message p {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 10%;
+    font-family: inherit;
+    color: #6F743C;
+}
+
 /* Recipe of the day styling */
 
 
@@ -303,6 +324,10 @@ form legend {
 #method-container {
     width: 40%;
     display: inline-block;
+}
+
+#method-container h4 {
+    padding-left: 1rem
 }
 
 #recipe-of-the-day h2 {
@@ -401,6 +426,12 @@ form legend {
     margin-left: 1rem;
 }
 
+#recipe-of-the-day li {
+    margin-bottom: 1rem
+}
+
+/* Recipe video */
+
 #recipe-video {
     padding: 2rem 1rem;
     text-align: center;
@@ -421,7 +452,8 @@ form legend {
     padding-top: 56.25%;
     display: inline-block;
     margin-left: 4rem;
-    top: -43rem;
+    top: 0rem;
+    border: 0px;
 }
 
 .video-container video {
@@ -457,64 +489,244 @@ form legend {
     margin-top: 4rem;
     width: 2rem;
     text-align: center;
-
 }
 
 /* Foodie education styling */
 
-/* Foodie Education Page */
-
-/* Introduction Section */
-.introduction {
+/* Baking tutorial section */
+.baking-tutorial {
     padding: 2rem;
+  }
+  
+  /* Introduction section */
+  .introduction {
     text-align: center;
-}
-
-.introduction h1 {
+  }
+  
+  .introduction h1 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
     color: #D39944;
+    font-family: 'Calligraffitti', Arial, Helvetica, sans-serif;
+    margin-top: 4rem;
+    padding-top: 1rem;
+  }
+  
+  .introduction p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Cuisines section */
+  .cuisines {
+    margin-top: 2rem;
+  }
+  
+  .cuisines h2 {
+    font-size: 1.5rem;
+    color: #6F743C;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .cuisines article {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .cuisines article h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6F743C;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cuisines article p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  /* Cooking Techniques section */
+  .cooking-techniques {
+    margin-top: 2rem;
+  }
+  
+  .cooking-techniques h2 {
+    font-size: 1.5rem;
+    color: #6F743C;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .cooking-techniques article {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .cooking-techniques article h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6F743C;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cooking-techniques article p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  /* Additional Cooking Techniques */
+  .more-cooking-techniques {
+    display: flex;
+    margin: 2rem 0;
+    flex-direction: row;
+  }
+  
+  .more-cooking-techniques h2 {
+    font-size: 2rem;
+    font-family: 'Calligraffitti', Arial, Helvetica, sans-serif;
+    color: #D39944;
+    margin-bottom: 1.5rem;
+    width: 12rem;
+  }
+  
+  .more-cooking-techniques article {
+    width: 45%;
+    margin-bottom: 2rem;
+  }
+  
+  .more-cooking-techniques h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6F743C;
+    margin-bottom: 1rem;
+  }
+  
+  .more-cooking-techniques p {
+    font-size: 1rem;
+    color: #6F743C;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Culinary Terms */
+.culinary-terms {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
 }
 
-.introduction p {
-    font-size: 1.2rem;
+.culinary-terms h2 {
+    font-size: 2rem;
+    font-family: 'Calligraffitti', Arial, Helvetica, sans-serif;
+    color: #D39944;
+    margin-bottom: 1.5rem;
+}
+
+.culinary-terms article {
+    width: 45%;
     margin-bottom: 2rem;
 }
 
-/* Cuisines Section */
-.cuisines {
-    padding: 2rem;
-}
-
-.cuisines h2 {
-    text-align: center;
+.culinary-terms h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6F743C;
     margin-bottom: 1rem;
 }
 
-.cuisines ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-}
-
-.cuisines li {
-    margin: 1rem;
-}
-
-.cuisines a {
+.culinary-terms p {
+    font-size: 1rem;
     color: #6F743C;
-    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
-.cuisines a:hover {
+/* Foodie Q&A styling */
+
+/* Question and answer section */
+.q-and-a {
+    margin-top: 2rem;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.q-and-a h2 {
+    font-size: 2rem;
+    font-family: 'Calligraffitti', Arial, Helvetica, sans-serif;
     color: #D39944;
-    text-decoration: underline;
+    margin-bottom: 1.5rem;
 }
 
-/* Featured Articles Section */
+.q-and-a h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6F743C;
+    margin-bottom: 1rem;
+}
 
+.q-and-a p {
+    font-size: 1rem;
+    color: #6F743C;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Footer styling */
+
+footer {
+    background-color: #D39944;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content p {
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .social-media-icons a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .social-media-icons i {
+    color: #6F743C;
+    font-size: 1.5rem;
+  }
+  
+  .social-media-icons a:last-child {
+    margin-right: 0;
+  }
+  
 
 
 /* Hero image animation */
